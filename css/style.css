@@ -3,7 +3,6 @@ div,
 ul,
 li,
 p,
-h1,
 h2,
 h3,
 h4,
@@ -11,13 +10,43 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
-
+h1 {
+  font-family: 'Aclonica', sans-serif;
+}
 .clear-fix {
   overflow: auto;
 }
+#navbar{
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  z-index: 99;
+  background-color: #2dcbfc;
+  position: fixed;
+}
+#navbar #nav{
+  padding-top: 5px;
+  text-align: center;
+}
+.navlist{
+  list-style: none;
+  display: inline-block;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-family: 'Aclonica', sans-serif;
+  font-size: 13px;
 
+}
+li a{
+  text-decoration: none;
+  color: #fafafa;
+}
+li a:hover {
+  color: #cbcbcb;
+}
 .education-entry,
 .work-entry,
 .project-entry {
@@ -26,7 +55,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: #075168;
   line-height: 48px;
   display: inline;
 }
@@ -34,7 +63,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  color: #013342;
   line-height: 29px;
   padding: 10px;
 }
@@ -58,9 +87,7 @@ h3,
 h4,
 h5 {
   padding: 10px 5%;
-
 }
-
 
 .date-text {
   font-style: italic;
@@ -76,7 +103,6 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -95,26 +121,28 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
+  color: #013342;
   line-height: 28px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: #1199c3;
   display: none;
+  font-size: 18px;
+  font-style:normal;
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color:#2dcbfc;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #1199c3;
 }
 
 .white-text {
   font-weight: bold;
-  color: #fff;
+  color: #013342;
 }
 
 .gray {
@@ -129,7 +157,8 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #fcfcfc;
+    margin-top: 55px;
 }
 
 .flex-box {
@@ -138,7 +167,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 10px;
+  padding: 5px;
 }
 
 .flex-column {
